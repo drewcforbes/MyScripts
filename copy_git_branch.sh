@@ -12,5 +12,5 @@
 # (via bash_profile, .zshrc, etc, for whichever shell you use)
 # From a git repo, invoke copyNewGitCommit, then paste with command v
 
-export storyNumber=`git branch | sed -E -n 's/^\* ([0-9]+).*$/\1/p'`
+storyNumber=`git branch | sed -E -n 's/^\* ([0-9]+).*$/\1/p'`
 echo 'git commit -m "[#'$storyNumber'] ' | pbcopy
