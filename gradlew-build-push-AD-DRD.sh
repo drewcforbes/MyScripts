@@ -1,0 +1,1 @@
+./gradlew clean build && cp build/libs/DeliveryRouteDomain.jar . && cf push AD-DeliveryRouteDomain
